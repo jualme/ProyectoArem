@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Proyecto AREM</title>
+
+</head>
+<body>
+
+
+	<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="well well-sm">
+                <form class="form-horizontal" method="POST" >
+                    <fieldset>
+                        <legend class="text-center header">Cuadrado</legend>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="num" name="numero" type="number" placeholder="Ingrese el numero" class="form-control">
+                            </div>
+                        </div>                        
+                        
+                        <input type="submit" value="Submit" class="btn btn-primary btn-lg" onclick='this.form.action="/cuadrado/"+ document.getElementById("num").value;'>
+                           
+                        
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
